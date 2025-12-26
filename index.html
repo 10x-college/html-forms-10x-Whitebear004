@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+ <html lang="en">
+     <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Gondor Archive: The War of the Ring">
+        <title>Jovian Drift SOS</title>
+       <link rel="stylesheet" href="./styles/styles.css">
+
+     </head>
+      <body>
+        <iframe id="bg-frame" src="./styles/effect.html"></iframe>
+
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Pilot Credentials</legend>
+                <label for="Pilot Name">Pilot Name:</label>
+                <input id="Pilot Name" type="text" name="pilot_name" required placeholder="Enter name">
+                <label for="Access Code:">Access Code:</label>
+                <input id="Access Code:" type="password" required name="access_code" placeholder="password">
+                <label for="Command Email:">Command Email:</label>
+                <input id="Command Email:" type="email" name="email" required placeholder="email">
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Vessel Diagnostics</legend>
+                <label for="Hull Damage">Hull Damage (%):</label>
+                <input id="Hull Damage" type="number" name="hull_damage" required>
+                <label for="Emergency Level:">Emergency Level:</label>
+                <select id="Emergency Level:" name="emergency_level" required> 
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Mission Log & Evidence</legend>
+                <label for="SOS Message">SOS Message:</label>
+                <textarea id="SOS Message" name="SOS Message"  required rows="3"></textarea>
+                <div> 
+                    <input id="quarantine" type="checkbox" required name="evidence_confirmed">
+                    <label for="quarantine">I agree to quarantine protocols</label>
+                </div>
+            </fieldset>
+            <button type="submit">INITIATE TRANSMISSION</button>
+            <button type="reset">RESET SYSTEM</button>
+
+
+        </form>
+        
+       
+        <script src="./scripts/launch.js"></script>
+    </body>
+ </html> 
